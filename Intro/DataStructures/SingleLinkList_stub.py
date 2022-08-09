@@ -1,0 +1,18 @@
+from SingleLinkList import *
+e1=Node(dataval='Monday')
+sl=SingleLink()
+sl.inserthead(node=e1)
+e2=Node(dataval='Tuesday')
+sl.inserthead(node=e2)
+e3=Node(dataval='Wednesday')
+sl.insertmiddle(node1=e1,node2=e2,node3=e3)
+print(sl.startval.dataval)
+
+print(sl.nextval(startval=e1).dataval)
+print(sl.head.dataval)
+sl.delete(node=e1)
+print(sl.startval.dataval,sl.head.dataval)
+sl.delete(node=e2)
+print(sl.startval.dataval,sl.head.dataval)
+sl.delete(node=e3)
+print(sl.startval,sl.head)
