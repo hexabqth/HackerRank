@@ -64,3 +64,4 @@ f='a,e,i,o,u'
 r=re.compile('(?<=[^a,e,i,o,u])([a,e,i,o,u]{2,})[^a,e,i,o,u]',re.I)
 m=r.findall(s)
 print(*m,sep='\n') if m else print('-1')
+
