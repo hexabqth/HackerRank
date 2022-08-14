@@ -1,0 +1,9 @@
+class A:
+   def __init__(self,**kwargs):
+       b=kwargs.get('inp')
+   a=[]
+
+obj1=A(inp=1)
+obj2=A(inp=2)
+obj1.__class__.a.append(1)
+print(obj2.__class__.a)
